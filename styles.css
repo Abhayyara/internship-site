@@ -542,7 +542,7 @@ nav {
 
 @media (width < 900px) {
   body{
-    margin-left: 5rem;
+    padding-left: 5rem;
   }
   .nav__links {
     display: none;

@@ -541,8 +541,10 @@ nav {
 }
 
 @media (width < 900px) {
-  body{
-    padding-left: 2rem;
+  .section__container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 0rem 1rem;
   }
   .nav__links {
     display: none;

@@ -546,15 +546,7 @@ nav {
     margin: auto;
     padding: 0rem 1rem;
   }
-  nav {
-    margin: auto;
-    padding: 1rem 0rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
-    min-width: 117vw;
-}
+ 
   .nav__links {
     display: none;
   }
@@ -599,6 +591,15 @@ nav {
     margin: auto;
     padding: 0rem 1rem;
   }
+   nav {
+    margin: auto;
+    padding: 1rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    min-width: 117vw;
+}
   .explore__header {
     flex-direction: column;
   }

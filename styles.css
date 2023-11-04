@@ -585,6 +585,11 @@ nav {
 }
 
 @media (width < 600px) {
+  .section__container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 0rem 1rem;
+  }
   .explore__header {
     flex-direction: column;
   }

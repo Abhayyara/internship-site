@@ -542,7 +542,7 @@ nav {
 
 @media (width < 900px) {
   body{
-    padding-left: 5rem;
+    padding-left: 2rem;
   }
   .nav__links {
     display: none;
@@ -583,9 +583,6 @@ nav {
 }
 
 @media (width < 600px) {
-  body{
-    padding-left: 2rem;
-  }
   .explore__header {
     flex-direction: column;
   }

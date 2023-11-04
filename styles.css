@@ -542,7 +542,7 @@ nav {
 
 @media (width < 900px) {
   .section__container {
-    max-width: var(--max-width);
+    min-width: 100vw;
     margin: auto;
     padding: 0rem 1rem;
   }

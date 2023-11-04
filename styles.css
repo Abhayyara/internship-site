@@ -584,7 +584,7 @@ nav {
 
 @media (width < 600px) {
   body{
-    margin-left: -2rem;
+    padding-left: 2rem;
   }
   .explore__header {
     flex-direction: column;

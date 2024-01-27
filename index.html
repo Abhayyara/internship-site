@@ -4,350 +4,472 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Internship Essence</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
     <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppons:wght@100;300;400;500;600;700;800;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap')
 
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
+
+:root{
+    --primary-text-color: #183b56;
+    --secondary-text-color: #577592;
+    --accent-color: #2294ed;
+    --accent-color-dark: #1d69a3;
+    --padding-inline-section: 20px
+}
+
 body{
-    background-color: #488AC7;
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-text-color);
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    color: var(--secondary-text-color);
+    line-height: 1.8rem;
 }
 
 a{
-    color: #000;
     text-decoration: none;
-}
-
-
-
-#card{
-    max-width: 20em;
-    flex-direction: row;
-    background-color: rgb(3, 34, 100);
-    border-radius: 2em;
-}
-#card #card-body{
-    display: flex;
-    justify-content: space-between;
-}
-
-#card #card-body h5{
-    color: rgb(250, 250, 250);
-}
-
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
-
-*{
-    font-family: 'Poppins', sans-serif;
-    margin:0; padding:0;
-    box-sizing: border-box;
-    outline: none; border:none;
-    text-decoration: none;
-    text-transform: capitalize;
-    transition: .2s linear;
-}
-
-.cont1{
-    background:linear-gradient(45deg, blueviolet, lightgreen);
-    padding:15px 9%;
-    padding-bottom: 100px;
-}
-
-.cont1 .heading{
-    text-align: center;
-    padding-bottom: 15px;
-    color:#fff;
-    text-shadow: 0 5px 10px rgba(0,0,0,.2);
-    font-size: 50px;
-}
-
-.cont1 .box-cont1{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-    gap:15px;
-}
-
-.cont1 .box-cont1 .box{
-    box-shadow: 0 5px 10px rgba(0,0,0,.2);
-    border-radius: 5px;
-    background: #fff;
-    text-align: center;
-    padding:30px 20px;
-}
-
-.cont1 .box-cont1 .box img{
-    height: 80px;
-}
-
-.cont1 .box-cont1 .box h3{
-    color:#444;
-    font-size: 22px;
-    padding:10px 0;
-}
-
-.cont1 .box-cont1 .box p{
-    color:#777;
-    font-size: 15px;
-    line-height: 1.8;
-}
-
-.cont1 .box-cont1 .box .btn{
-    margin-top: 10px;
     display: inline-block;
-    background:#333;
-    color:#fff;
-    font-size: 17px;
-    border-radius: 5px;
-    padding: 8px 25px;
 }
 
-.cont1 .box-cont1 .box .btn:hover{
-    letter-spacing: 1px;
+ul{
+    list-style: none;
+}
+.hover-links{
+    color: var(--primary-text-color);
 }
 
-.cont1 .box-cont1 .box:hover{
-    box-shadow: 0 10px 15px rgba(0,0,0,.3);
-    transform: scale(1.03);
+.hover-links:hover{
+    color: var(--accent-color);
+    transition: 0.2s ease-out;
 }
 
-@media (max-width:768px){
-    .cont1{
-        padding:20px;
-    }
-}   
-    </style>
+.primary-button{
+    background-color: var(--accent-color);
+    border-radius: 6px; 
+    font-weight: 700;
+    text-align: center;
+    color: white !important;
+    padding: 12px 24px;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+    transition: 0.2s ease-out;
+}
+
+.secondary-button{
+    border: 0.5px solid var(--secondary-text-color);
+    border-radius: 6px;
+    font-weight: 700;
+    color: var(--primary-text-color) !important;
+    padding: 12px 24px;
+    transition: 0.2s ease-out;
+}
+.primary-button:hover{
+    background-color: var(--accent-color-dark );
+}
+
+.secondary-button:hover{
+    border-color: var(--accent-color);
+    color: var(--accent-color) !important;
+}
+
+
+
+.small-bold-text{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+
+.container{
+    max-width: 1180px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section);
+    overflow: hidden;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+/*top banner*/
+
+.top-banner{
+    background-color: #4fb3d4;
+}
+
+.banner-text{
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+}
+
+/*navbar*/
+
+.main-nav{
+    margin-top: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.company-logo img{
+    width: 160px;
+}
+.nav-links{
+    flex-basis: 730px;
+}
+.nav-links ul{
+    justify-content: end;
+    gap: 40px;
+}
+
+.nav-toggle{
+    display: none;
+}
+
+/*header*/
+
+header{
+    padding: 50px var(--padding-inline-section) 0;
+}
+.header-section{
+    justify-content: center;
+    gap: 50px;
+}
+.header-left{
+    max-width: 40vw;
+}
+
+.header-left h1{
+    margin-top: 20px;
+}
+.get-started-btn{
+    margin-top: 20px;
+}
+.header-right img{
+    width: 100%;
+}
+
+
+/*feature section*/
+
+.features-section{
+    padding: 80px var(--padding-inline-section) 0;
+}
+
+.features-area {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+.features-card {
+    flex-direction: column;
+    max-width: 30%;
+    text-align: center;
+}
+.features-card .course-space{
+    margin-top: -3px;
+}
+
+/*about us*/
+.big-feature-section{
+    padding: 30px var(--padding-inline-section) 0;
+}
+
+.big-feature-container{
+    gap: 30px;
+}
+
+.feature-img img{
+    width: 100%;
+}
+.feature-des{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.feature-des .p{
+    margin-top: -2%;
+    align-items: center !important;
+}
+
+
+/*cta-section*/
+
+.cta-section{
+    padding: 80px var(--padding-inline-section) 80px;
+    background-color: #183b54;
+}
+
+.cta-section-container{
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    color: white;
+}
+.cta-section-container p{
+    color: white;
+    margin-top: 20px
+}
+
+/*footer*/
+
+footer{
+    background-color: #b9cde4;
+    padding: var(--padding-inline-section);
+}
+
+.subfooter-container{
+    justify-content: center;
+    gap: 30px;
+}
+
+@media screen and (max-width: 991px) {
+  h3{
+    font-size: 1.2rem;
+  }
+  .nav-toggle {
+    display: block;
+    margin-right: 20px;
+  }
+
+  .main-nav{
+    overflow: initial;
+  }
+  .nav-links {
+    position: absolute;
+    background-color: white;
+    left: -100%;
+    top: 100%;
+    width: 100%;
+    padding-block: 20px;
+    transition: 0.2s ease-out;
+  }
+
+  .nav-links.active{
+    left: 0;
+  }
+
+  .nav-links ul{
+    flex-direction: column;
+  }
+  .cta-section {
+    padding-block: 80px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .primary-button {
+    width: 60%;
+  }
+  .header-section {
+    flex-direction: column-reverse;
+  }
+  .header-left {
+    max-width: 100vw;
+    text-align: center;
+  }
+  .features-card {
+    min-width: calc(50% - 10px);
+  }
+  .big-feature-container {
+    flex-direction: column;
+  }
+  #About {
+    flex-direction: column-reverse;
+  }
+  .cta-section {
+    padding-block: 35px;
+  }
+  .cta-section-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 3px;
+    color: white;
+  }
+  .cta-section-container p {
+    margin-top: 5px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  :root {
+    --padding-inline-section: 10px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+  p{
+    font-size: 1rem;
+  }
+}
+
+</style>
 </head>
 
 <body>
-
-
-    <div id="___gatsby">
-        <div style="outline: none" tabindex="-1" id="gatsby-focus-wrapper">
-            <header id="header" class="headroom" style="background-color: #fffffff9; padding-bottom: 15px">
-                <div class="startp-nav">
-                    <div class="container">
-                        <nav class="navbar navbar-expand-md navbar-light">
-                            <a class="navbar-brand" href="index.html"><img src="assets/logo1.png"
-                                    style="height: 40px" /></a><button
-                                class="navbar-toggler navbar-toggler-right collapsed" type="button"
-                                data-toggle="collapse" data-target="#navbarSupportedContent"
-                                aria-controls="navbarSupportedContent" aria-expanded="false"
-                                aria-label="Toggle navigation">
-                                <span class="icon-bar top-bar"></span><span class="icon-bar middle-bar"></span><span
-                                    class="icon-bar bottom-bar"></span>
-                            </button>
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul class="navbar-nav ms-auto">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#home">Home </a>
-                                    </li>
-
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#services">Services</a>
-                                    </li>
-                                    
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#about">About</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#footer">Contact</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="others-option">
-                                <a class="btn btn-light" href="#">Get Started</a>
-                            </div>
-                        </nav>
-                    </div>
-                </div>
-            </header>
-
-
-
-
-            <!--End navbar-->
-
-
-
-
-
-            <!--start landing section-->
-
-            <section class="p-3" id="home">
-                <div class="container py-5">
-                    <div class="row justify-content-between align-items-center">
-                        <div class="col-md">
-                            <a href="#"><img src="assets/my_logo.png" class="img-fluid" alt=""></a>
-                        </div>
-                        <div class="col-md">
-                            <h1 class="text-info">
-                                Elevate Your Skills with <span class="text-warning">'Internship Essence'</span>
-                            </h1>
-                            <p class="my-4">
-                                Unleash your potential and embark on a journey towards a stronger, fitter, and more
-                                confident you.
-                            </p>
-                            <button class="btn btn-primary btn-lg">Get Started</button>
-                        </div>
-                            
-                        </div>
-                        
-                    </div>
-                </div>
-            </section>
-
- <!--end of landing section-->
-
-
-
-
-
-        
-            <!--start of service section-->
-
-
-            <section class="py-3" id="services">
-                <div class="container py-5">
-                    <h1 class="text-center py-5">Services</h1>
-                    <div class="row text-center g-4">
-                        <div class="col-md">
-                            <div class="card bg-dark text-light p-5">
-                                <div class="card-body text-center">
-                                    <div class="h1 mb-3">
-                                        <i class="bi bi-person-workspace"></i>
-                                    </div>
-                                    <h3 class="card-title mb-3">
-                                        User-Friendly Internship
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md">
-                            <div class="card bg-dark text-light p-5">
-                                <div class="card-body text-center">
-                                    <div class="h1 mb-3">
-                                        <i class="bi bi-reception-4"></i>
-                                    </div>
-                                    <h3 class="card-title mb-3">
-                                        Sequencial Training
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md">
-                            <div class="card bg-dark text-light p-5">
-                                <div class="card-body text-center">
-                                    <div class="h1 mb-3">
-                                        <i class="bi bi-check-square-fill"></i>
-                                    </div>
-                                    <h3 class="card-title mb-3">
-                                        Building Confidence
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-
-            <!--end of service section-->
-
-
-
-
-
-
-            <!--start about section-->
-
-
-            <section class="p-5" id="about">
-                <div class="container py-5">
-                    <h1 class="text-center py-5">About</h1>
-                    <div class="row justify-content-between align-items-center">
-                        <div class="col-md">
-                            <a href="#"><img src="assets/header.png" class="img-fluid" alt=""></a>
-                        </div>
-                        <div class="col-md">
-                            <h2><span class="text-warning">Internship Essence</span></h2>
-                            <p>
-                                Internship Essence collaborates with students to secure internships spanning a variety of fields. 
-                                This equips students with the means to amass experience, refine their skills, and grow their professional network
-                            </p>
-                             <p>
-                                 By undertaking internships, students can gain essential practical experience within their field.
-                                 Additionally, internships facilitate the development of new skills and the establishment of a network of professional relationships.
-                             </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-        <!--get specialised in these areas-->
-
-
-
-
-        <section class="p-5 specialisations" id="specialisations">
-          
-            <div class="container py-5">
-                <h1 class="text-center py-5">Get specialized in these Domains</h1>
-            </div>
-        </section>
-        
-        <div class="cont1">
-
-            <h1 class="heading">our services</h1>
-        
-            <div class="box-cont1">
-        
-                <div class="box">
-                    <img src="image/icon-1.png" alt="">
-                    <h3>HTML 5</h3>
-                    <a href="#" class="btn">Apply Now</a>
-                </div>
-        
-                <div class="box">
-                    <img src="image/icon-2.png" alt="">
-                    <h3>CSS 3</h3>
-                   <a href="#" class="btn">Apply Now</a>
-                </div>
-        
-                <div class="box">
-                    <img src="image/icon-3.png" alt="">
-                    <h3>JavaScript</h3>
-                    <a href="#" class="btn">Apply Now</a>
-                </div>
-        
-                <div class="box">
-                    <img src="image/icon-4.png" alt="">
-                    <h3>SASS</h3>
-                    <a href="#" class="btn">Apply Now</a>
-                </div>
-        
-                <div class="box">
-                    <img src="image/icon-5.png" alt="">
-                    <h3>JQuery</h3>
-                   <a href="#" class="btn">Apply Now</a>
-                </div>
-        
-            </div>
-        
+    <div class="top-banner">
+        <div class="container">
+            <div class="small-bold-text banner-text">Welcome to virtual internship</div>
         </div>
+    </div>
+
+    <nav>
+        <div class="container main-nav flex">
+            <a href="#" class="company-logo">
+                <img src="./assets/logo1.png" alt="internship essence">
+            </a>
+            <div class="nav-links" id="nav-links">
+                <ul class="flex">
+                    <li><a href="#" class="hover-links">HOME</a></li>
+                    <li><a href="#Services" class="hover-links">SERVICES</a></li>
+                    <li><a href="#About" class="hover-links">ABOUT</a></li>
+                    <li><a href="#Contact" class="hover-links">CONTACT</a></li>
+                    <li><a href="#" class="hover-links primary-button">GET STARTED</a></li>
+                </ul>
+            </div>
+            <a href="#" class="nav-toggle hover-links" id="nav-toggle"><i class="fa fa-bars"></i></a>
+        </div>
+    </nav>
 
 
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <header>
+        <div class="container header-section flex">
+            <div class="header-left">
+                <h1>Elevate Your Skills With 'Internship Essence'</h1>
+                <p>Unleash Your Potential And Embark On A Journey Towards A Stronger, Fitter, And More Confident You.
+                </p>
+                <a href="#" class="primary-button get-started-btn">Get Started</a>
+            </div>
+            <div class="header-right">
+                <img src="./assets/img0.png" alt="hero image">
+            </div>
+        </div>
+    </header>
+
+    <!--Courses-->
+    <section class="features-section">
+        <div class="container">
+            <div class="features-area flex">
+                <div class="features-card flex">
+                    <img src="./assets/wd.png" alt="">
+                    <h3>Web Development</h3>
+                    <a href="#" class="secondary-button">Apply</a>
+                </div>
+                <div class="features-card flex">
+                    <img src="./assets/ml.png" alt="">
+                    <h3>Machine Learning</h3>
+                    <a href="#" class="secondary-button">Apply</a>
+                </div>
+                <div class="features-card flex">
+                    <img src="./assets/ds.png" alt="">
+                    <h3>Data Science</h3>
+                    <a href="#" class="secondary-button">Apply</a>
+                </div>
+                <div class="features-card flex">
+                    <img src="./assets/ds.png" alt="">
+                    <h3>HTML (Basic)</h3>
+                    <a href="#" class="secondary-button">Apply</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--about us-->
+
+    <section class="big-feature-section" id="Services">
+        <h3>SERVICES</h3>
+        <div class="container flex big-feature-container">
+            <div class="feature-img">
+                <img src="./assets/service.png" alt="">
+            </div>
+            <div class="feature-des flex">
+                <h4>Straightforward Interface</h4>
+                <p class="p">The straightforwardness of the interface ensures ease of use and navigation.</p>
+
+                <h4>Email Alerts</h4>
+                <p class="p">The email alerts for significant occurrences, such as impending deadlines, new assignments,
+                    and alterations to your schedule.</p>
+                <h4>Project timelines</h4>
+                <p class="p">The notifications are dispatched beforehand through your email, providing sufficient time
+                    for you to complete your tasks.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!--Services-->
+    <section class="big-feature-section" >
+        <h3>ABOUT US</h3>
+        <div class="container flex big-feature-container" id="About">
+            <div class="feature-des flex">
+                <h3>Internship Essence</h3>
+                <p>Internship Essence Collaborates With Students To Secure Internships Spanning A Variety Of Fields.
+                    This Equips Students With The Means To Amass Experience, Refine Their Skills, And Grow Their
+                    Professional Network.
+                </p>
+            </div>
+            <div class="feature-img">
+                <img src="./assets/about.png" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <!--cta-section-->
+    <div class="cta-section">
+        <div class="container flex cta-section-container">
+            <h2>Start your Internship</h2>
+            <p>Give wings to your knowledge</p>
+            <a href="#" class="primary-button">Get Started</a>
+        </div>
+    </div>
+
+
+
+    <footer id="Contact">
+        <div class="container flex subfooter-container">
+            <a href="#" class="footer-img">Contact us:</a>
+            <a href="#" class="hover-links"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="hover-links"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+
+
+    <script src="https://kit.fontawesome.com/0d6d7fbcb1.js" crossorigin="anonymous"></script>
+    <script>
+        const toggleButton = document.getElementById('nav-toggle');
+        const navLinks = document.getElementById('nav-links')
+
+        toggleButton.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        })
+    </script>
 </body>
 
 </html>
